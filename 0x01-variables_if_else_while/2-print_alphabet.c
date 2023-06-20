@@ -5,11 +5,17 @@
  */
 int main(void)
 {
+	char x[];
+
+	x = char[26];
+
 	int i;
 
-	for (i = 'A'; i <= 'Z'; i++)
+
+	for (i = 0; i < 26 ; i++)
 	{
-		putchar(tolower(i));
+		putchar(tolower(x[i]), "\n");
 	}
 	return (0);
+
 }
