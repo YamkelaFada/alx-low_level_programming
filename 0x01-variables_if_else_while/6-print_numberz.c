@@ -6,9 +6,9 @@
 
 int main(void)
 {
-	int i;
+	int check;
 
-	for (i = 100; i < 110; i++)
+	for (check = 20; check < 30; check++)
 	{
 		putchar(i);
 	}
