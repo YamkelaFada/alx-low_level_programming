@@ -1,13 +1,14 @@
 #include <stdio.h>
 /**
- * main - ten digits
+ * main - try
  * Return: 0
  */
+
 int main(void)
 {
 	int i;
 
-	for (i = 20; i <= 30; i++)
+	for (i = 32; i < 42; i++)
 	{
 		putchar(i);
 	}
