@@ -1,20 +1,21 @@
 #include <stdio.h>
 /**
- * main - numbers of base sixteen in lowercase
+ * main - base sixteen
  * Return: 0
  */
+
 int main(void)
 {
-	int a;
+	int j;
 
-	for (a = 48; a <= 58; a++)
+	for (j = 48; j < 58; j++)
 	{
-		putchar(a);
+		putchar(j);
 	}
-	for (a = 97; a < 103; a++)
+	for (j = 97; j < 103; j++)
 	{
-		putchar(a);
+		putchar(j);
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
