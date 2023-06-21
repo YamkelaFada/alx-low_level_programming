@@ -8,7 +8,7 @@ int main(void)
 {
 	int i;
 
-	for (i = 32; i < 42; i++)
+	for (i = 31; i < 42; i++)
 	{
 		putchar(i);
 	}
