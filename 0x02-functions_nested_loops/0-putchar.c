@@ -1,4 +1,4 @@
-#include "main_h"
+#include "main.h"
 /**
  * main - learn to print
  * Return: 0
