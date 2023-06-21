@@ -10,7 +10,7 @@ int main(void)
 
 	for (check = 20; check < 30; check++)
 	{
-		putchar(i);
+		putchar(check);
 	}
 	putchar('\n');
 	return (0);
