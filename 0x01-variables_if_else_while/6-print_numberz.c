@@ -1,16 +1,15 @@
 #include <stdio.h>
 /**
  * main - ten digits
- * Return 0
+ * Return: 0
  */
-
 int main(void)
 {
-	int numbers;
+	int i;
 
-	for(numbers = 0; numbers <=9; numbers++)
+	for (i = 25; i < 35; i++)
 	{
-		putchar("%d", numbers);
+		putchar(i);
 	}
 	putchar("\n");
 	return (0);
