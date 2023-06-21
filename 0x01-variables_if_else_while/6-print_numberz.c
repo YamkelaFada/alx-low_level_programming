@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - try
+ * main - zero to nine
  * Return: 0
  */
 
@@ -8,7 +8,7 @@ int main(void)
 {
 	int check;
 
-	for (check = 20; check < 30; check++)
+	for (check = 48; check < 58; check++)
 	{
 		putchar(check);
 	}
