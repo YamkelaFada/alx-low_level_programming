@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _isalpha - check alphabets
- * @c: check this char
- * Return 1 if character found, else 0
+ * @c: check this charter
+ * Return: 1 if character found, else 0
  */
 int _isalpha(int c)
 {
