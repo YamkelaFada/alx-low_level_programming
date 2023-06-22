@@ -19,7 +19,7 @@ int print_sign(int n)
 		_putchar('+');
 		return (1);
 	} else if (n < 0)
-		return (a + b);
+		return (a + x);
 	else if (n == 0)
 		return (0);
 }
