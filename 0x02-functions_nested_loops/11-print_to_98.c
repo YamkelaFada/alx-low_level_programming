@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * print_to_98 - prints all natural numbers
- * @n: copy from n
+ * @n: passing value
  */
 
 void print_to_98(int n)
@@ -15,25 +15,19 @@ void print_to_98(int n)
 		for (x = n; x <= 98; x++)
 		{
 			if (x != 98)
-			{
 				printf("%d, ", x);
-			}
 			else if (x == 98)
-			{
 				printf("%d\n", x);
-			}
-		} else if (n >= 98)
+		}
+	} else if (n >= 98)
+	{
+		for (y = n; y >= 98; y--)
 		{
-			for (y = n; y >= 98; y--)
-			{
-				if (y != 98)
-				{
-					printf("%d, ", y);
-				} else if (y == 98)
-					printf("%d\n", y);
-			}
+			if (y != 98)
+				printf("%d, ", y);
+			else if (y == 98)
+				printf("%d\n", y);
 		}
 	}
 }
-
 
