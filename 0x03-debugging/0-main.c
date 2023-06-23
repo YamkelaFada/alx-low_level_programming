@@ -1,11 +1,8 @@
 #include "main.h"
-
 /**
- *main - Entry point
- *
- * Return: 0 (Success)
-**/
-
+ * main -  check positive or negative num
+ * Return: 0
+ */
 int main(void)
 {
 	int x;
