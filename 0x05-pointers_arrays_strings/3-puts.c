@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _puts - print a string, followed by a new line
- * @str: pass value
- */
+ * _puts - prints a string, followed by a new line, to stdout.
+ * @str: the string
+**/
 
 void _puts(char *str)
 {
@@ -15,5 +15,4 @@ void _puts(char *str)
 	}
 
 	_putchar('\n');
-	return (0);
 }
