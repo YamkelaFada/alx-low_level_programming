@@ -3,22 +3,23 @@
 #include <time.h>
 
 /**
- * main - crack me
- * Return: 0
- */
+ * main - generates random passwords for 101-crackme
+ * Return: Always 0 (Success)
+**/
 
 int main(void)
 {
 	int x;
-	int y;
+	char i;
 
 	srand(time(NULL));
 	x = 0;
+
 	while (x <= 2645)
 	{
-		y = rand() % 128;
-		x = x + y;
-		putchar(y);
+		i = rand() % 128;
+		x += i;
+		putchar(i);
 	}
 	putchar(2772 - x);
 	return (0);
