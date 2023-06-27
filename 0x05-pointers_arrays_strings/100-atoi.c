@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
- * _atoi - convert a string to integer
- * @s: pass value
- * Return: converted value
+ * _atoi - convert a string to an integer.
+ * @s: the string to be comverted.
+ *Return: The integer value of the comverted string.
  */
+
 int _atoi(char *s)
 {
 	int x;
@@ -12,8 +14,7 @@ int _atoi(char *s)
 	x = 1;
 	y = 0;
 
-	while (*s++)
-	{
+	do {
 		if (*s == '-')
 		{
 			x *= -1;
@@ -26,6 +27,7 @@ int _atoi(char *s)
 		{
 			break;
 		}
-	}
+	} while (*s++);
+
 	return (y * x);
 }
