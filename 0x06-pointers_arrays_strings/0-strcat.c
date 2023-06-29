@@ -1,22 +1,22 @@
 #include "main.h"
 #include <string.h>
-
+#include <stdio.h>
 /**
- * _strcat - concatenaing
- * @dest: pass first value
- * @src: pass second value
- * Return: destination
-**/
+ * _strcat - concatenating
+ * @dest: variable one
+ * @src: variable two
+ * Return: Dest
+ */
 
 char *_strcat(char *dest, char *src)
 {
-	int str = strlen(dest);
 	int i;
+	int x_len = strlen(dest);
 
 	for (i = 0; src[i] != '\0'; i++)
-		dest[str + i] = src[i];
-
-	des[str + i] = '\0';
-
+	{
+		dest[x_len + i] = src[i];
+	}
+	dest[x_len + i] = '\0';
 	return (dest);
 }
