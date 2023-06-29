@@ -1,28 +1,31 @@
 #include "main.h"
+
 /**
- * leet - encodes a string
- * @str: the string to encode
- *
- * Return: the encode string
+ * leet - encoding
+ * @str: pass variable
+ * Return: encoded string
  */
+
 char *leet(char *str)
 {
-	int i = 0;
-	int j = 0;
+	int a;
+	int b;
 	char x[] = "aAeEoOtTlL";
 	char y[] = "4433007711";
 
-	while (str[i] != '\0')
+	a = 0;
+	while (str[a] != '\0')
 	{
-		while (x[j] != '\0')
+		b = 0;
+		while (x[b] != '\0')
 		{
-			if (str[i] == x[j])
+			if (str[a] == x[b])
 			{
-				str[i] = y[j];
+				str[a] = y[b];
 			}
-			j++;
+			b++;
 		}
-		i++;
+		a++;
 	}
 	return (str);
 }
