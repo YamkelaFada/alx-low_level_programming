@@ -1,16 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- * main - multiplies two numbers
- * @argc: value one
- * @argv: value two
+ * main - multiply two values
+ * @argc: num of arg
+ * @argv: arr arg
  * Return: 0
  */
 
 int main(int argc, char *argv[])
 {
-	int i;
 	int res = 1;
+	int j;
 
 	if (argc != 3)
 	{
@@ -19,11 +20,11 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		for (i = 1; i < argc; i++)
+		for (j = 1; j < argc; j++)
 		{
-			x *= atoi(argv[i]);
+			res *= atoi(argv[j]);
 		}
-		printf("%d\n", x);
+		printf("%d\n", res);
 	}
 	return (0);
 }
