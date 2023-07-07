@@ -1,57 +1,43 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 
 /**
- * main - minimum number of coins
- * @argc: num arg
- * @argv: arg arr
- * Return: 0
+ * main - min coins
+ * @argc: args
+ * @argv: passing
+ * Return: 0 (Success), 1 (Error)
  */
 
 int main(int argc, char *argv[])
 {
-	int cents;
-	int coins;
+	int i;
+	int x;
+	int tot;
+	int coins[] = {25, 10, 5, 2, 1};
 
-	cents = 0;
-	coins = 0;
-	if (argc == 2)
-	{
-		cents = atoi(*(argv + 1));
-		while (cents > 0)
-		{
-			if (cents % 25 < cents)
-			{
-				cents -= 25;
-				coins++;
-			}
-			else if (cents % 10 < cents)
-			{
-				cents -= 10;
-				coins++;
-			}
-			else if (cents % 5 < cents)
-			{
-				cents -= 5;
-				coins++;
-			}
-			else if (cents % 2 < cents)
-			{
-				cents -= 2;
-				coins++;
-			}
-			else if (cents % 1 < cents)
-			{
-				cents -= 1;
-				coins++;
-			}
-		}
-	}
-	else
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	printf("%d\n", coins);
+
+	x = atoi(argv[1]);
+	tot = 0;
+
+	if (x < 0)
+	{
+		printf("0\n");
+		return (0);
+	}
+	for (i = 0; i < 5 && x >= 0; i++)
+	{
+		while (x >= coins[i])
+		{
+			tot++;
+			x -= coins[i];
+		}
+	}
+	printf("%d\n", tot);
 	return (0);
 }
