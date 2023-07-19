@@ -1,74 +1,59 @@
 /**
- * op_add - Adding two int numbers
- * @a: value one
- * @b: value two
- * Return: sum
+ * op_add - Adds two int numbers
+ * @a: argument passed
+ * @b: argument passed
+ * Return: result
  */
 
 int op_add(int a, int b)
 {
-	int sum;
-
-	sum = a + b;
-	return (sum);
+	return (a + b);
 }
 
 /**
- * op_sub - subtracting two int numbers
- * @a: value one
- * @b: value two
- * Return: difference
+ * op_sub - subtracts two int numbers
+ * @a: argument passed
+ * @b: argument passed
+ * Return: result
  */
 
 int op_sub(int a, int b)
 {
-	int diff;
-
-	diff = a - b;
-	return (diff);
+	return (a - b);
 }
 
 /**
- * op_mul - Multiply two int numbers
- * @a: value one
- * @b: value two
- * Return: product
+ * op_mul - Multiplies two int numbers
+ * @a: argument passed
+ * @b: argument passed
+ * Return: result
  */
 
 int op_mul(int a, int b)
 {
-	int prod;
-
-	prod = a * b;
-	return (prod);
+	return (a * b);
 }
 
 /**
- * op_div - Divide two int numbers
- * @a: value one
- * @b: value two
- * Return: product
+ * op_div - Divides two int numbers
+ * @a: argument passed
+ * @b: argument passed
+ * Return: result
  */
 
 int op_div(int a, int b)
 {
-	int div;
-
-	div = a / b;
-	return (div);
+	return (a / b);
 }
 
 /**
  * op_mod - Modules two int numbers
- * @a: value one
- * @b: value two
- * Return: product
+ * @a: argument passed
+ * @b: argument passed
+ * Return: result
  */
 
 int op_mod(int a, int b)
 {
-	int x;
-
-	x = a % b;
-	return (x);
+	return (a % b);
 }
