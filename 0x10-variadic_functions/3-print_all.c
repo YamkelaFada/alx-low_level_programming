@@ -7,7 +7,7 @@
 
 void print_all(const char * const format, ...)
 {
-	const char word[] = "FOOD";
+	const char word[] = "cifs";
 	va_list list;
 	unsigned int x = 0;
 	unsigned int y;
@@ -28,16 +28,16 @@ void print_all(const char * const format, ...)
 		}
 		switch (format[i])
 		{
-		case 'F':
+		case 'c':
 			printf("%c", va_arg(list, int)), x = 1;
 			break;
-		case 'O':
+		case 'i':
 			printf("%d", va_arg(list, int)), x = 1;
 			break;
-		case 'O':
+		case 'f':
 			printf("%f", va_arg(list, double)), x = 1;
 			break;
-		case 'D':
+		case 's':
 			string = va_arg(list, char *), x = 1;
 			if (!string)
 			{
