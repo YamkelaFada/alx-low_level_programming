@@ -9,15 +9,12 @@ void print_all(const char * const format, ...)
 {
 	const char word[] = "cifs";
 	va_list list;
-	unsigned int x = 0;
-	unsigned int y;
+	unsigned int x = 0, i = 0, y = 0;
 	char *string;
-	unsigned int i = 0;
 
 	va_start(list, format);
 	while (format && format[i])
 	{
-		y = 0;
 		while (word[y])
 		{
 			if (format[i] == word[y] && x)
