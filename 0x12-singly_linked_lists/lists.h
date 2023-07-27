@@ -4,11 +4,12 @@
 #include <string.h>
 
 /**
- * struct lists_s - main entry
- * @str: passing value of a string
- * @len: passing length
- * @next: next node
- * Disc: Structure
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
  */
 
 typedef struct list_s
